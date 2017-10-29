@@ -37,7 +37,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: -30px;
+  bottom:30px;
   width: 100%;
 }
 /* LOADER */
@@ -106,7 +106,8 @@ ul.bxslider {
   background-position: -43px 0;
 }
 .bx-wrapper .bx-controls-direction a {
-  position: absolute;
+  
+    position: absolute;
   top: 50%;
   margin-top: -16px;
   outline: 0;
@@ -123,6 +124,7 @@ ul.bxslider {
   text-align: center;
 }
 .bx-wrapper .bx-controls-auto .bx-start {
+    visibility: hidden;
   display: block;
   text-indent: -9999px;
   width: 10px;
@@ -137,6 +139,7 @@ ul.bxslider {
   background-position: -86px 0;
 }
 .bx-wrapper .bx-controls-auto .bx-stop {
+    visibility: hidden;
   display: block;
   text-indent: -9999px;
   width: 9px;
@@ -152,8 +155,8 @@ ul.bxslider {
 }
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-  text-align: left;
-  width: 80%;
+  text-align: center;
+  width: 100%;
 }
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
   right: 0;

@@ -88,6 +88,18 @@ fieldset {
 	margin:0 0 5px;
 	padding:10px;
 	font-size:15px;
+    border-radius: 0.5em;
+}
+#file1{
+cursor:pointer;
+	width:25%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:10px;
+    border-radius: 0.5em;
 }
 
 #contact button[type="submit"]:hover {
