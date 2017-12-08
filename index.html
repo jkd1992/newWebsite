@@ -6,9 +6,12 @@
     <meta name=”Description” content=”tani post solidcam solidworks postprocessor alphacam cam”>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
- <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
     <head>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -24,80 +27,80 @@
 
             });
         </script>
+      
+        
+        
     </head>
 
 
 
     <header>
         <a href=".">
-            <div class="logo">
-                <img alt src="ivicon.jpg">
+            <div class="logo-menu">
+                <img alt src="ivicon.jpg"   title="Najlepsze posptocessory SolidCAM">
             </div>
         </a>
+
+
         <div id='cssmenu'>
-            <!--<img src="ivicon160x70.jpg" id="logo" />-->
             <ul>
-                <li class='active'><a href='aboutus'>O nas</a></li>
+                <li class='active'><a href='#aboutus'>O nas</a></li>
                 <li><a href='#implementation'>Wdrożenia</a></li>
                 <li><a href='#offer'>Wycena postprocessora</a></li>
                 <li><a href='#contact'>Kontakt</a></li>
- 
+
             </ul>
-  
         </div>
- <!--<img style="top:10px; right:0px; position:absolute; z-index:15" src="images/sale.gif">-->
-    </header>
-    <body>
+
 
         <section>
-            <div id="tv_container" class="div1">
-
-                <script src="/js/videoWithNoJs/videoWithNoJs.js"> </script>
-                <div id="videoWithNoJs" class="videoWrapper">
-                    <iframe  src="https://www.youtube.com/embed/fbFeNkFPlMA?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1" frameborder="0" allowfullscreen ></iframe>
-
-      <!--  <a href=".">
-            <div class="logo_sale">
-                <img alt src="images/sale.gif">
+          <div class="video-header">
+           <!-- <div id="videoWithNoJs" class="videoWrapper">
+                <script src="/js/videoWithNoJs/videoWithNoJs.js"> </script>-->
+                <iframe  src="https://www.youtube.com/embed/fbFeNkFPlMA?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1" frameborder="0" allowfullscreen ></iframe>
             </div>
 
-        </a>
--->
-
-
-                </div>
-            </div>
         </section>
-        <section id="aboutus" class="div2">
+    </header>
+    
+ <!--   W BODY ZNAJDUJE SIE GALERIA ORAZ FORMULARZ ZGLOSZENIOWY-->
+    
+    <body>
+ <script>
+    AOS.init();
+  </script>
 
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>       
-             <h1>Oferujemy kompleksowe wdrożenie postrprocessorów w konkurencyjnej cenie
-            </h1>
+        <section  class="aboutus-section" id="aboutus">
+
+            <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+            <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>       
+           <article class="aboutus-article">
+               <h2>Oferujemy kompleksowe wdrożenie postrprocessorów w konkurencyjnej cenie
+            </h2>
             <br> 
-            
-            
-          <!--  <p>SolidCAM </p>
-            <p>SolidWorksCAM </p>
-            <p>InventorCAM</p>-->
-            <div style="text-align: center;" id="programs">
-            <a href="https://www.solidcam.com/" target="_blank">
-             <img src="/images/sc_logo_colored.png" alt="SolidCAM"/>
-             </a>
-             <a href="http://www.inventorcam.com/pl/" target="_blank">
-             <img src="/images/InventorCAM_logo_header.png" alt="InventorCAM"/>
-             </a>
-             <a href="https://camworks.com/" target="_blank">
-             <img src="/images/camworks.png" alt="InventorCAM"/>
+ <h2>Tworzymy również grafiki symulacji maszynowych</h2>
+               
+           </article> 
+
+            <div  data-aos="fade_up" style="text-align: center;" id="programs">
+                <a href="https://www.solidcam.com/" target="_blank">
+                    <img src="/images/sc_logo_colored.png" alt="SolidCAM"/>
                 </a>
-                
-             </div>
-             <h2>Tworzymy również grafiki symulacji maszynowych</h2>
-              <figure>
+                <a href="http://www.inventorcam.com/pl/" target="_blank">
+                    <img src="/images/InventorCAM_logo_header.png" alt="InventorCAM"/>
+                </a>
+                <a href="https://camworks.com/" target="_blank">
+                    <img src="/images/camworks.png" alt="InventorCAM"/>
+                </a>
+
+            </div>
+           
+     <!--       <figure>
+
                 <img src="/images/medal.gif" alt="szybki czas wdrożenia"/>
-            </figure>
+            </figure>-->
         </section>
-      
+
 
         <!-- <div id="medal">
 <img src="/images/medal.gif" alt="szybki czas wdrożenia"/>
@@ -106,13 +109,13 @@
 -->
 
         <div id="implementation" >
-        
+
             <link rel="stylesheet" a href="js/jquery.bxslider.css">
             <ul class="bxslider">
                 <!--  <h1 style="text-align: center; z-index: 5;">Nasze wdrożenia</h1>-->
                 <center> <li><img style=" text-align: center;"src="/images/clx450.jpg" /></li></center> 
                 <center> <li><img style=" text-align: center;"src="/images/millturn1.jpg" /></li></center> 
-              
+
             </ul>  
 
         </div>
@@ -121,16 +124,16 @@
 
 
         <section id="sectionrpf">
-<link rel="stylesheet" href="style_footer.css">
-
+           <!-- <link rel="stylesheet" href="style_footer.css">
+-->
 
 
             <div style="width:100%; height:auto; text-align: center; padding-right: 15em; 
-            padding-left: 15em;" id="offer"method="get" autocomplete="on" class="RFP">
-        
-               <h1>
-W celu kontaktu lub utorzenia zpytania ofertowego proszę o wypełnienie formularza poniżęj
-</h1>
+                        padding-left: 15em;" id="offer"method="get" autocomplete="on" class="RFP">
+
+                <h1>
+                    W celu kontaktu lub utorzenia zpytania ofertowego proszę o wypełnienie formularza poniżęj
+                </h1>
                 <form id="contact" action="pdfGenerator/form.php" method="POST">
                     <p>
                         <!--<label> Nazwa firmy :</label>-->
@@ -192,16 +195,16 @@ W celu kontaktu lub utorzenia zpytania ofertowego proszę o wypełnienie formula
                             _("status").innerHTML = "Upload Aborted";
                         }
                     </script>
-                   
+
                     <input type="file" name="file1" id="file1"><br>
                     <input type="button" value="Upload File" onclick="uploadFile()">
                     <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
                     <h3 id="status"></h3>
                     <p id="loaded_n_total"></p>
-                     <button name="submit" type="submit" name="sendMail" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
-                    
-                    
-                    
+                    <button name="submit" type="submit" name="sendMail" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
+
+
+
                 </form>
                 <form id="upload_form" enctype="multipart/form-data" method="post">
                     <input type="file" name="file1" id="file1"><br>
@@ -234,77 +237,77 @@ W celu kontaktu lub utorzenia zpytania ofertowego proszę o wypełnienie formula
     </body>
     <!--<div onLoad="ChangeCaptcha()">
 
-        <input type="text" id="randomfield" disabled>
+<input type="text" id="randomfield" disabled>
 
-        <script>
-            // Do not remove this (it's just a comment and won't effect the functions)
-            // SimpleCaptcha v1.0 © Anudeep Tubati
-            function ChangeCaptcha() {
-                var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
-                var string_length = 6;
-                var ChangeCaptcha = '';
-                for (var i=0; i<string_length; i++) {
-                    var rnum = Math.floor(Math.random() * chars.length);
-                    ChangeCaptcha += chars.substring(rnum,rnum+1);
-                }
-                document.getElementById('randomfield').value = ChangeCaptcha;
-            }
-            function check() {
-                if(document.getElementById('CaptchaEnter').value == document.getElementById('randomfield').value ) {
-                    window.open('https://www.google.co.in','_self');
-                }
-                else {
-                    alert('Please re-check the captcha');
-                }
-            }
-        </script>
-        <br><br>
-        <input id="CaptchaEnter" size="20" maxlength="6" />
-        <br><br>
-        <button onclick="check()">Done</button>
-    </div>-->
-    
+<script>
+// Do not remove this (it's just a comment and won't effect the functions)
+// SimpleCaptcha v1.0 © Anudeep Tubati
+function ChangeCaptcha() {
+var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+var string_length = 6;
+var ChangeCaptcha = '';
+for (var i=0; i<string_length; i++) {
+var rnum = Math.floor(Math.random() * chars.length);
+ChangeCaptcha += chars.substring(rnum,rnum+1);
+}
+document.getElementById('randomfield').value = ChangeCaptcha;
+}
+function check() {
+if(document.getElementById('CaptchaEnter').value == document.getElementById('randomfield').value ) {
+window.open('https://www.google.co.in','_self');
+}
+else {
+alert('Please re-check the captcha');
+}
+}
+</script>
+<br><br>
+<input id="CaptchaEnter" size="20" maxlength="6" />
+<br><br>
+<button onclick="check()">Done</button>
+</div>-->
+
     <footer style="  
-   
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background:#6cf;
-       text-align: center;">
+
+                   width:100%;
+                   height:60px;   /* Height of the footer */
+                   background:#6cf;
+                   text-align: center;">
         <!--<link rel="stylesheet" href="style_footer.css">
 
-        <div class="container">  
+<div class="container">  
 
-            <form id="contact" action="mail.php" method="POST">
-                <h4> Masz pytanie? Napisz!!!</h4>
-                <fieldset>
-                    <input placeholder="Imię i nazwisko" type="text" tabindex="1" required autofocus>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Adres mailowy" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Numer kontaktowy" type="tel" tabindex="3" required>
-                </fieldset>
+<form id="contact" action="mail.php" method="POST">
+<h4> Masz pytanie? Napisz!!!</h4>
+<fieldset>
+<input placeholder="Imię i nazwisko" type="text" tabindex="1" required autofocus>
+</fieldset>
+<fieldset>
+<input placeholder="Adres mailowy" type="email" tabindex="2" required>
+</fieldset>
+<fieldset>
+<input placeholder="Numer kontaktowy" type="tel" tabindex="3" required>
+</fieldset>
 
-                <fieldset>
-                    <textarea placeholder="Wprowadź swoją wiadomość..." type="message" tabindex="5" required></textarea>
-                </fieldset>
-                <fieldset>
+<fieldset>
+<textarea placeholder="Wprowadź swoją wiadomość..." type="message" tabindex="5" required></textarea>
+</fieldset>
+<fieldset>
 
-                </fieldset>
-            </form>
+</fieldset>
+</form>
 
-            <button name="submit" type="submit" name="sendMail" value="oknoAlert" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
-            <script>
-                function oknoAlert() {
-                    alert('To jest okienko alert');
-                }
+<button name="submit" type="submit" name="sendMail" value="oknoAlert" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
+<script>
+function oknoAlert() {
+alert('To jest okienko alert');
+}
 
-                document.getElementById('confirm').addEventListener('click', function() {
-                    oknoConfirm()
-                });
-            </script>
-        </div>-->
-       <h4>site design / logo © 2017 jkd1992 </h4>
+document.getElementById('confirm').addEventListener('click', function() {
+oknoConfirm()
+});
+</script>
+</div>-->
+        <h4>site design / logo © 2017 jkd1992 </h4>
     </footer>
 </html>
