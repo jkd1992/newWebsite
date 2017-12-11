@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    
+    <script src="/js/smoothscroll.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -17,8 +19,15 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <!-- jQuery library (served from Google) -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-1.8.3.js"></script>
+
+        
+        
+        
+        
         <!-- bxSlider Javascript file -->
         <script src="/js/jquery.bxslider.js"></script>
+         
         <!-- bxSlider CSS file -->
         <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
         <script type=text/javascript>
@@ -28,13 +37,17 @@
             });
         </script>
       
-        
+
         
     </head>
 
 
 
     <header>
+       
+       
+       
+       
         <a href=".">
             <div class="logo-menu">
                 <img alt src="ivicon.jpg"   title="Najlepsze posptocessory SolidCAM">
@@ -43,8 +56,47 @@
 
 
         <div id='cssmenu'>
+           <script>
+            // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+            
+            </script>
             <ul>
-                <li class='active'><a href='#aboutus'>O nas</a></li>
+                <li  class='active'><a href='#aboutus'>O nas</a></li>
                 <li><a href='#implementation'>Wdrożenia</a></li>
                 <li><a href='#offer'>Wycena postprocessora</a></li>
                 <li><a href='#contact'>Kontakt</a></li>
@@ -107,8 +159,8 @@
 
 </div> 
 -->
-
-        <div id="implementation" >
+<section class="gallery">
+           <div id="implementation" >
 
             <link rel="stylesheet" a href="js/jquery.bxslider.css">
             <ul class="bxslider">
@@ -119,6 +171,9 @@
             </ul>  
 
         </div>
+    
+</section>
+ 
 
 
 
